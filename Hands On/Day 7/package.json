@@ -1,0 +1,15 @@
+{
+  "name": "belajarfunctionlodash",
+  "version": "1.0.0",
+  "description": "Belajar Function dan Lodash",
+  "main": " Soal 6.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Try Diana Yunita",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
