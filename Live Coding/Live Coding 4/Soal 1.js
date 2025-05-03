@@ -5,8 +5,11 @@ let people =[
 ];
 
 class Person{
-    permit(arr){
-        arr.forEach(element => {
+    constructor(orang){
+        this.orang = orang;
+    }
+    permit(){
+        this.orang.forEach(element => {
             if (element.age >= 17) {
                 console.log(`${element.nama} anda diizinkan untuk mengakses konten ini`);
             }else{
@@ -14,35 +17,32 @@ class Person{
             }
         });
     }
-    getAccess(arr) {
-        let namaNama = [];
-        arr.forEach(element => {
-            if (element.age >= 17) {
-                namaNama.push(element.nama);
-            }
-        });
-        console.log(`Diizinkan masuk : ${namaNama}`);
-        
+    
+    getAccess() {
+        let akses = this.orang.filter(element => element.age >= 17);
+        return akses;
     }
   
-    getNotAllowed(arr) {
+    getNotAllowed() {
         // hitung ada berapa orang yang tidak diizinkan untuk mengakses
-        let count = 0;
-        arr.forEach(element => {
-            if (element.age < 17) {
-                count++;
-                console.log(`Jumlah yang tidak boleh mengakses: ${count} orang`);
-            }
-        });
+
+        let count = this.orang.filter(element => element.age < 17).length;
+        return count;
     }
   
     getAccessMessage() {
-        this.permit()
+        console.log("=============================================");
+        
+        console.log("Meminta izin akses: ",people);
+        this.permit();
+        console.log("\nDiizinkan mengakses: ", this.getAccess());
+        console.log("\nJumlah orang yang dilarang mengakses: ", this.getNotAllowed());
     }
 }
 
-const personChecker = new Person();
-personChecker.permit(people);
-personChecker.getAccess(people);
-personChecker.getNotAllowed(people);
+const personChecker = new Person(people);
+personChecker.permit();
+personChecker.getAccess();
+personChecker.getNotAllowed();
+personChecker.getAccessMessage();
 
