@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16</title>
+</head>
+<body>
+    <!-- Ordered List Daftar Karyawan -->
+     <h1>Daftar Karyawan</h1>
+     <ol style="list-style: upper-roman;">
+        <li>Audy</li>
+        <li>Rafly</li>
+        <li>Diana</li>
+        <li>Audy</li>
+        <li>Rafly</li>
+        <li>Diana</li>
+     </ol>
+
+    <!-- Unordered List -->
+     <h1>Buah-buahan</h1>
+     <ul style="list-style: disc;">
+        <li>Jambu</li>
+        <li>Apel</li>
+        <li>Mangga</li>
+        <li>Jambu</li>
+        <li>Apel</li>
+        <li>Mangga</li>
+     </ul>
+
+     <!-- Description List -->
+      <dl>
+        <dt>
+            <h3>Mobil</h3>
+        </dt> 
+        <dd>Audy</dd>
+        <dd>Toyota</dd>
+      </dl>
+
+      <!-- Table -->
+       <table>
+         <tr>
+            <th>Nama</th>
+            <th>Nomor HP</th>
+            <th>Alamat</th>
+            <th>Umur</th>
+         </tr>
+         <tr>
+            <td>Audy</td>
+            <td>08123456789</td>
+            <td>Jl. Raya No. 1</td>
+            <td>20</td>
+         </tr>
+         <tr>
+            <td>Rafly</td>
+            <td>08987654321</td>
+            <td>Jl. Raya No. 2</td>
+            <td>21</td>
+         </tr>
+       </table>
+
+       <!-- Form -->
+        <form>
+        <!-- Label & Input -->
+            <div>
+            <label for="nama-lengkap">Nama Lengkap</label>
+            </div>
+            <input 
+            id ="nama-lengkap" 
+            placeholder="Nama Lengkap"/>
+
+            <div>
+            <label>Nomor HP</label>
+            </div>
+            <input placeholder="Masukkan Nomor HP"/>
+
+            <!-- Jenis Input -->
+            <div>
+            <label>Password</label>
+            </div>
+            <input 
+            type="password" 
+            placeholder="Masukkan Password"/>
+
+            <div>
+            <label>Email</label>
+            </div>
+            <input 
+            type="email" 
+            placeholder="Masukkan Email"/>
+
+            <div>
+            <label>Tanggal</label>
+            </div>
+            <input 
+            type="date" 
+            placeholder="Masukkan Tanggal"/>
+            
+            <input 
+            type="submit" 
+            placeholder="submit"/>
+        </form>
+
+        <!-- Form Action-->
+         <form action="./form.html" method="get">
+            <div>
+                <label for="username">Username</label>
+                <input id="username" placeholder="Masukkan Username"/>
+            </div>
+
+            <div>
+                <label for ="password">Password</label>
+                <input id="password" type="password" placeholder="Masukkan Password"/>
+            </div>
+
+            <div>
+                <label for="komentar">Komentar</label>
+                <textarea id="komentar" placeholder="Masukkan Komentar"></textarea>
+            </div>
+
+            <div>
+                <label for="buah">Pilih Buah</label>
+                <select>
+                    <option>Mangga</option>
+                    <option>Apel</option>
+                    <option>Jambu</option>
+                    <option>Jeruk</option>
+                </select>
+            </div>
+
+            <input type="submit"/>
+         </form>
+</body>
+</html>

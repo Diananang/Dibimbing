@@ -1,0 +1,63 @@
+/* p{
+    color: red;
+    font-size: 20px; 
+    font-weight: 700; 
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+.hello{
+    color: green;
+    font-size: 18px; 
+    font-weight: 700; 
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.halo{
+    color: blue;
+    font-size: 18px; 
+    font-weight: 700; 
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-title{
+    color: red;
+    font-size: 18px; 
+    font-weight: 700; 
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+[href="https://www.youtube.com"]{
+    color: red;
+}
+[href="https://www.google.com"]{
+    color: orange;
+}
+
+/* Challenge */
+.title{
+    color: black;
+    font-size: 40px; 
+    font-weight: 700; 
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    border: 2px solid pink;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #eb738f;
+}
+.sub-title{
+    color: purple;
+    font-size: 20px; 
+    font-weight: 700; 
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
