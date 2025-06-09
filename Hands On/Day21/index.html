@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-sans">
+    <nav class="flex items-center justify-end p-4 mx-auto">
+        <div class="hidden gap-4 sm:flex">
+            <a href="#" class="font-medium">Works</a>
+            <a href="#" class="font-medium">Blog</a>
+            <a href="#" class="font-medium">Contact</a>
+        </div>
+        
+        <button class="flex flex-col gap-1 sm:hidden" id="menu-toggle">
+            <div class="w-4 rounded-full h-0.5 bg-black"></div>
+            <div class="w-4 rounded-full h-0.5 bg-black"></div>
+            <div class="w-4 rounded-full h-0.5 bg-black"></div>
+        </button>
+        
+    </nav>
+    
+    <section class="flex flex-col-reverse items-center justify-between max-w-full px-4 my-12 sm:flex-row sm:px-8 lg:max-w-5xl">
+        
+        <div class="flex flex-col lg:max-w-[600px] max-w-[320px]">
+            <h1 class="text-3xl font-bold leading-14 text-[#21243D] mb-6 sm:text-4xl lg:text-5xl text-center sm:text-left">
+                Hi, I am John,
+                <br>
+                Creative Technologist
+            </h1>
+            <p class="text-base text-[#21243D] text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui mollitia minima quod nihil neque sed nemo impedit maxime, ut laboriosam itaque quam numquam exercitationem expedita obcaecati blanditiis soluta! Molestias?</p>
+            <button 
+            class="bg-[#FF6464] text-white text-xl px-5 py-2 rounded-xs mt-9 w-52 h-12 self-center sm:self-start">
+            Download Resume
+            </button>
+            
+        </div>
+        <div class="mt-8 shrink-0 sm:mt-0 sm:ml-8">
+            <img 
+            src="./media/profile.jpg" 
+            alt="Avatar Profile" 
+            class="object-cover object-top w-32 h-32 rounded-full lg:w-60 lg:h-60 sm:w-48 sm:h-48">
+        </div>
+        
+    </section>
+
+    <section class="flex flex-col max-w-full gap-8 px-4 my-12">
+        <h2 class="text-2xl font-normal leading-[60px] text-[#21243D] text-center sm:text-start">Featured works</h2>
+        <div class="flex flex-col w-full gap-8">
+            <div class="flex flex-col gap-5 pb-3 border-gray-400 border-b-1 sm:flex-row">
+                <img src="./media/work1.png" alt="Featured Work 1" class="self-center max-w-full max-h-full rounded-md sm:max-w-60 sm:max-h-44 sm:self-start">
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold text-3xl text-[#21243D]">Designing Dashboard</h3>
+                    <div class="flex gap-6 text-xl text-[#8695A4]">
+                        <span class="bg-[#142850] text-white font-black text-lg px-2 py-0.5 rounded-2xl">2020</span>Dashboard
+                    </div>
+                    <p class="text-base text-[#21243D] font-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quia maiores perferendis, harum quaerat consequatur quidem quo labore ipsum commodi facilis necessitatibus sint minus, iure laboriosam eveniet sed atque et.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 pb-3 border-gray-400 border-b-1 sm:flex-row" >
+                <img src="./media/work2.png" alt="Featured Work 2" class="max-w-full max-h-full rounded-md sm:max-w-60 sm:max-h-44">
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold text-3xl text-[#21243D]">Vibrant Portraits of 2020</h3>
+                    <div class="flex gap-6 text-xl text-[#8695A4]">
+                        <span class="bg-[#142850] text-white font-black text-lg px-2 py-0.5 rounded-2xl">2018</span>Illustration
+                    </div>
+                    <p class="text-base text-[#21243D] font-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quia maiores perferendis, harum quaerat consequatur quidem quo labore ipsum commodi facilis necessitatibus sint minus, iure laboriosam eveniet sed atque et.</p>
+                </div>
+            </div>
+            <div class="flex flex-col pb-3 border-gray-400 sm:gap-5 border-b-1 sm:flex-row">
+                <img src="./media/works3.png" alt="Featured Work 3" class="max-w-full max-h-full rounded-md sm:max-w-60 sm:max-h-44">
+                <div class="flex flex-col gap-4 ">
+                    <h3 class="font-bold text-3xl text-[#21243D]">36 Days of Malayalam type</h3>
+                    <div class="flex gap-6 text-xl text-[#8695A4]">
+                        <span class="bg-[#142850] text-white font-black text-lg px-2 py-0.5 rounded-2xl">2018</span>Typography
+                    </div>
+                    <p class="text-base text-[#21243D] font-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quia maiores perferendis, harum quaerat consequatur quidem quo labore ipsum commodi facilis necessitatibus sint minus, iure laboriosam eveniet sed atque et.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
