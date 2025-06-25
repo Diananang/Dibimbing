@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana's Portfolio</title>
+    <link href="./output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+</head>
+<body class="font-inter leading-[140%] w-dvw">
+    <header class="sticky top-0 bg-[#064E3B] h-fit">
+        <nav class="flex justify-between items-center max-w-[960px] sm:mx-auto mx-4 sm:py-4 py-2 text-white">
+            <div class="sm:text-[32px] text-2xl font-medium">Diana</div>
+            <div class="hidden sm:flex flex-row gap-8 w-fit h-fit">
+                <a href="#about" class="sm:text-base text-sm font-normal">About</a>
+                <a href="#projects" class="sm:text-base text-sm font-normal">Projects</a>
+                <a href="#contact" class="sm:text-base text-sm font-normal">Contact</a>
+            </div>
+            <button class="flex flex-row  sm:hidden items-center gap-2" id="menu-toggle">
+              <span class="sm:text-base text-sm font-normal">Menu</span>
+              <div class="flex flex-col gap-1">
+                <div class="w-4 rounded-full h-0.5 bg-white"></div>
+                <div class="w-4 rounded-full h-0.5 bg-white"></div>
+                <div class="w-4 rounded-full h-0.5 bg-white"></div>
+              </div>
+          </button>
+        </nav>
+    </header>
+
+    <main>
+      <section class="bg-[#F0FDF4] h-fit">
+        <div class="flex flex-col items-center gap-8 max-w-[960px] sm:mx-auto mx-4 sm:py-8 py-4">
+          <div class="flex flex-col gap-6 text-[#1F2937] text-center">
+            <h1 class="font-grotesk sm:text-[40px] text-[32px] font-bold">Hi, I'm Try Diana Yunita</h1>
+            <p class="sm:text-2xl text-xl font-bold">Front End Developer</p>
+            <p class="sm:text-base text-sm font-normal">I build responsive and user-friendly websites and this is my portfolio.</p>
+          </div>
+          <div class="w-fit h-fit">
+            <button class="sm:py-2 py-1 sm:px-4 px-2 rounded-lg sm:text-base text-sm text-white bg-[#059669]" type="button">
+              Let's get started
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-fit" id="about">
+        <div class="flex sm:flex-row flex-col gap-8 max-w-[960px] sm:mx-auto mx-4 sm:py-4 py-2">
+          <img src="./media/Try Diana Yunita_Pasfoto.jpg" alt="Profile Photo" class="sm:w-[200px] size-36 aspect-square rounded-full object-cover">
+          <div class="flex flex-col gap-8">
+            <h2 class="sm:text-[28px] text:2xl font-semibold text-[#1F2937] pb-2 border-b border-gray-400">About Me</h2>
+            <p class="sm:text-base text-sm font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui debitis sint perspiciatis! Eos esse exercitationem praesentium perspiciatis soluta dolor molestias mollitia unde eveniet. Voluptas quam cumque iure fugiat. Omnis?</p>
+            <div class="flex flex-row gap-6">
+              <span class="bg-[#F0FDF4] py-1 px-2 rounded-lg font-grotesk font-semibold sm:text-xs text-[10px] text-[#F06529]">HTML</span>
+              <span class="bg-[#F0FDF4] py-1 px-2 rounded-lg font-grotesk font-semibold sm:text-xs text-[10px] text-[#3C99DC]">CSS</span>
+              <span class="bg-[#F0FDF4] py-1 px-2 rounded-lg font-grotesk font-semibold sm:text-xs text-[10px] text-[#F0DB4F]">Javascript</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-fit" id="projects">
+        <div class="flex flex-col gap-8 max-w-[960px] sm:mx-auto mx-4 sm:py-4 py-2 ">
+          <h2 class="sm:text-[28px] text:2xl font-semibold text-[#1F2937] pb-2 border-b border-gray-400">Projects</h2>
+          <div class="grid sm:grid-cols-2 sm:grid-rows-2 grid-cols-1 grid-rows-1 gap-6 max-h-[350px]">
+            <div class="flex flex-col gap-4 bg-[#F0FDF4] rounded-lg">
+              <img src="./media/project1.png" alt="Project 1" class="sm:h-[180px] h-32 object-cover object-top">
+              <div class="flex flex-col gap-4 py-4 px-6">
+                <h3 class="sm:text-2xl text-xl font-medium">Movies Web</h3>
+                <p class="sm:text-base text-sm font-normal">The very first webpage that i tried to build. It took 3 days to complete it because i haven't learn HTML and CSS.</p>
+              </div>
+              <div class="flex flex-row gap-4 py-4 px-6 justify-end items-end">
+                <a href="https://www.figma.com/design/1pnmOJeVSq3OLXLuUU4D4p/Movie-Web?node-id=3-51&t=v1eEZrHqbjK3PySU-1" target="_blank" class="sm:text-sm text-xs text-white font-normal py-1 px-2 rounded-lg bg-[#059669]">
+                  <button type="button" >View</button>
+                </a>
+                <a href="https://github.com/Diananang/Dibimbing/tree/main/Web%20Movie'" target="_blank" class="sm:text-sm text-xs text-white font-normal py-1 px-2 rounded-lg bg-[#059669]">
+                  <button type="button" >Code</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-4 bg-[#F0FDF4] rounded-lg">
+              <img src="./media/project2.png" alt="Project 2" class="sm:h-[180px] h-32 object-cover object-top">
+              <div class="flex flex-col gap-4 py-4 px-6">
+                <h3 class="sm:text-2xl text-xl font-medium">Dibimbing Article Blog</h3>
+                <p class="sm:text-base text-sm font-normal">This webpage was my assignment from Dibimbing bootcamp that i had to slice the design from figma to HTML and CSS.</p>
+              </div>
+              <div class="flex flex-row gap-4 py-4 px-6 justify-end items-end">
+                <a href="https://www.figma.com/design/n5GS0kSmiwyiCHnYHRA2A2/Bootcamp-Front-End?node-id=5-12343&t=slzRab5kL4Jm8tTV-1" target="_blank" class="sm:text-sm text-xs text-white font-normal py-1 px-2 rounded-lg bg-[#059669]">
+                  <button type="button">View</button>
+                </a>
+                <a href="https://github.com/Diananang/Day18" target="_blank" class="sm:text-sm text-xs text-white font-normal py-1 px-2 rounded-lg bg-[#059669]">
+                  <button type="button" >Code</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-4 bg-[#F0FDF4] rounded-lg">
+              <img src="./media/project3.png" alt="Project 3" class="sm:h-[180px] h-32 object-cover object-top">
+              <div class="flex flex-col gap-4 py-4 px-6">
+                <h3 class="sm:text-2xl text-xl font-medium">Cafe Web</h3>
+                <p class="sm:text-base text-sm font-normal">This project was my first mini project from Dibimbing bootcamp that i had to make cafe or restaurant landing page using HTML and Tailwind CSS with responsive design.</p>
+              </div>
+              <div class="flex flex-row gap-4 py-4 px-6 justify-end items-end">
+                <a href="https://www.figma.com/design/khkpXYkZivXnS8qdksykMg/Web-Coffee-Shop?node-id=4-24&t=CMY36yIhXFKNNOFR-1" target="_blank" class="sm:text-sm text-xs text-white font-normal py-1 px-2 rounded-lg bg-[#059669]">
+                  <button type="button" >View</button>
+                </a>
+                <a href="https://github.com/Diananang/Dibimbing/tree/main/Mini%20Project" target="_blank" class="sm:text-sm text-xs text-white font-normal py-1 px-2 rounded-lg bg-[#059669]">
+                  <button type="button" >Code</button>
+                </a>
+              </div >
+            </div>
+
+            <div class="flex flex-col gap-4 bg-[#F0FDF4] rounded-lg">
+              <img src="./media/project4.png" alt="Project 4" class="sm:h-[180px] h-32 object-cover object-top">
+              <div class="flex flex-col gap-4 py-4 px-6 items-end">
+                <h3 class="sm:text-2xl text-xl font-medium">This Portfolio</h3>
+                <p class="sm:text-base text-sm font-normal">This portfolio can be my projects too, right?</p>
+              </div>
+              <div class="flex flex-row gap-4 py-4 px-6 justify-end items-end">
+                <a href="https://www.figma.com/design/z1g208AEqvRuYuX3L465TF/Portofolio?node-id=1-2&t=sFDEd7r3BlTiYlq5-1" target="_blank" class="sm:text-sm text-xs text-white font-normal py-1 px-2 rounded-lg bg-[#059669]">
+                  <button type="button" >View</button>
+                </a>
+                <a href="" target="_blank" class="sm:text-sm text-xs text-white font-normal py-1 px-2 rounded-lg bg-[#059669]">
+                  <button type="button" >Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-fit" id="contact">
+        <div class="flex flex-col sm:gap-8 gap-4 max-w-[960px] sm:mx-auto mx-4 sm:py-4 py-2">
+          <h2 class="sm:text-[28px] text:2xl font-semibold text-[#1F2937] pb-2 border-b border-gray-400">Get in Touch</h2>
+          <p class="sm:text-base text-sm font-normal">Feel free to send a message or reach me via email.</p>
+          <div class="flex sm:flex-row flex-col sm:gap-[108px] gap-8">
+            <form action="email" class="flex flex-col gap-4 sm:w-[500px] w-auto">
+              <div class="flex flex-col gap-2">
+                <label for="name" class="sm:text-base text-xs font-semibold">Name</label>
+                <input type="text" class="bg-[#F0FDF4]/50 border-2 border-[#059669] rounded-lg w-full sm:h-[50px] h-8 sm:text-base text-sm">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="email" class="sm:text-base text-xs font-semibold">Email</label>
+                <input type="email" class="bg-[#F0FDF4]/50 border-2 border-[#059669] rounded-lg w-full sm:h-[50px] h-8 sm:text-base text-sm">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="message" class="sm:text-base text-xs font-semibold">Message</label>
+                <textarea placeholder="Type your message..." class="bg-[#F0FDF4]/50 border-2 border-[#059669] rounded-lg w-full sm:h-[50px] h-8 resize sm:text-base text-sm"></textarea>
+              </div>
+              <button class="sm:text-base text-xs font-normal text-white px-2 py-1 rounded-lg bg-[#059669] w-fit" type="button">
+                Send Message
+              </button>
+            </form>
+
+            <div class="flex sm:flex-col flex-row sm:gap-6 gap-3 sm:text-base text-sm">
+              <div class="flex flex-row sm:gap-4 gap-2 items-center">
+                <img src="./media/ic_round-email.png" alt="email" class="sm:size[24px] size-[16px]">
+                <a href="#tridianayunita@gmail.com" target="_blank">Email</a>
+              </div>
+              <div class="flex flex-row sm:gap-4 gap-2 items-center">
+                <img src="./media/mingcute_linkedin-fill.png" alt="LinkedIn" class="sm:size[24px] size-[16px]">
+                <a href="https://linkedin.com/in/try-diana-yunita" target="_blank">LinkedIn</a>
+              </div>
+              <div class="flex flex-row sm:gap-4 gap-2 items-center">
+                <img src="./media/mdi_github.png" alt="Github" class="sm:size[24px] size-[16px]">
+                <a href="https://github.com/Diananang" target="_blank">Github</a>
+              </div>
+              <div class="flex flex-row sm:gap-4 gap-2 items-center">
+                <img src="./media/mingcute_instagram-fill.png" alt="Instagram" class="sm:size[24px] size-[16px]">
+                <a href="https://www.instagram.com/dhiana_yunita/" target="_blank">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#064E3B] h-fit">
+      <div class="flex flex-col sm:gap-4 gap-2 max-w-[960px] sm:mx-auto mx-4 sm:py-4 py-2 text-white items-center sm:text-sm text-[10px]">
+        <p>&copy 2025 Try Diana Yunita</p>
+        <p>Based in Jakarta - Open to remote work</p>
+      </div>
+    </footer>
+</body>
+</html>
