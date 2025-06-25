@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px 16px;
+    color: black;
+    gap: 16px;
+}
+
+/* logo */
+.logo {
+    margin-right: auto;
+    font-size: 40px;
+    font-family: "Italianno";
+}
+
+/* Navigation bar */
+nav{
+    margin: 0 auto;
+    display: flex;
+    gap : 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Kolom pencarian */
+.search-container{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(96, 102, 118, 0.20);
+    padding: 4px 8px;
+}
+
+.search-container input{
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    pad: 8px;
+}
+
+.search-container button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+/* Kolom signin dan login */
+.cta-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.cta-buttons a:nth-child(1) {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.cta-buttons a:nth-child(2) {
+    text-decoration: none;
+    color: white;
+    background-color: #606676;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cta-buttons a:nth-child(1):hover{
+    background-color: rgba(211, 211, 211, 0.2);
+}
+.cta-buttons a:nth-child(2):hover{
+    background-color: rgba(96, 111, 118, 0.8);
+}
+
+/* Preview Section */
+.preview{
+    background: url('img/TFF.jpg') lightgray center /cover no-repeat;
+    color: white;
+    padding: 32px;
+    width: 100%;
+    max-width: 100vw;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    algin-items: flex-start;
+}
+
+.preview h1{
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.preview p {
+    width: 45%;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.prev-buttons{
+    display: flex;
+    gap: 16px;
+}
+.prev-buttons a:nth-child(1){
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius:35px;
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+.prev-buttons a:nth-child(2){
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius:35px;
+    background-color:transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prev-buttons a:nth-child(1):hover{
+    background-color: rgba(211, 211, 211, 0.9);
+}
+.prev-buttons a:nth-child(2):hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Newest Section */
+.newest {
+    padding: 8px 32px;
+    background-color: white;
+    margin-bottom: 16px;
+}
+
+.newest h2{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.newest-grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.newest-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom : 16px; 
+    aspect-ratio: 2/3;
+    text-align: center;
+}
+
+.newest-card img {
+    width: 100%;
+    height: auto; 
+    max-height: 85%; 
+    object-fit: cover;
+}
+
+.newest-card p{
+    margin: 8px 0 0;
+    padding: 16px;
+    font-size: 16px;
+    background: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Watchnow Section */
+.watchnow {
+    padding: 8px 32px;
+    background-color: #606676;
+}
+
+.watchnow h2{
+    text-align: center;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.watchnow-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 16px;
+}
+
+.watchnow-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: white;
+    overflow: hidden;
+    flex: 0 0 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom :16px; 
+    aspect-ratio: 2/3;
+    text-align: center;
+}
+
+.watchnow-card img {
+    width: 100%;
+    height: auto; 
+    max-height: 85%; 
+    object-fit: cover;
+}
+
+.watchnow-card p{
+    margin: 8px 0 0;
+    padding: 16px;
+    font-size: 16px;
+    background: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* Recomendation Section */
+.recomendations {
+    padding: 8px 32px;
+    background-color: white;
+}
+
+.recomendations h2{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.recomendation-grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.recomendation-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom : 16px; 
+    aspect-ratio: 2/3;
+    text-align: center;
+}
+
+.recomendation-card img {
+    width: 100%;
+    height: auto; 
+    max-height: 85%; 
+    object-fit: cover;
+}
+
+.recomendation-card p{
+    margin: 8px 0 0;
+    padding: 16px;
+    font-size: 16px;
+    background: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color: #606676;
+    color: white;
+}
+
+.footer-buttons a {
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+.social-media{
+    padding: 8px 16px;
+}
